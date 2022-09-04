@@ -1,5 +1,5 @@
 import { Crystal, CrystalExpender } from "./../src/subscribers/CrystalExpender";
-import { CreditCard } from "../src/CreditCard";
+import { CreditCard } from "../src/domain/CreditCard";
 
 describe("CrystalExpender class", () => {
   const card = new CreditCard("Abradolf Lincler", "4916119711304546");

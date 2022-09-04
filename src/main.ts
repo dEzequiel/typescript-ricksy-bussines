@@ -1,6 +1,6 @@
 import { Crystal, CrystalExpender } from "./subscribers/CrystalExpender";
 import { Notificator } from "./observer/Notificator";
-import { CreditCard } from "./CreditCard";
+import { CreditCard } from "./domain/CreditCard";
 import { Ufo, UfosPark } from "./subscribers/UfosPark";
 import { UfoStatus } from "./subscribers/types";
 

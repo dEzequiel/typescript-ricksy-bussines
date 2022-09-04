@@ -1,4 +1,4 @@
-import { CreditCard } from "../CreditCard";
+import { CreditCard } from "../domain/CreditCard";
 import { GuestDispatcher } from "./types";
 
 export class Notificator implements GuestDispatcher {

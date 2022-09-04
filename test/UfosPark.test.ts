@@ -1,4 +1,4 @@
-import { CreditCard } from "../src/CreditCard";
+import { CreditCard } from "../src/domain/CreditCard";
 import { UfoStatus } from "../src/subscribers/types";
 import { Ufo, UfosPark } from "../src/subscribers/UfosPark";
 
