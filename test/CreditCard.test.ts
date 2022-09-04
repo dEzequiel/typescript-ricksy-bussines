@@ -1,4 +1,3 @@
-import { assert } from "console";
 import { CreditCard } from "../src/CreditCard";
 
 function setupCreditCard(): CreditCard {
