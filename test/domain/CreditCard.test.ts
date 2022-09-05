@@ -1,4 +1,4 @@
-import { CreditCard } from "../src/domain/CreditCard";
+import { CreditCard } from "../../src/domain/CreditCard";
 
 function setupCreditCard(): CreditCard {
   const card = new CreditCard("Abradolf Lincler", "4916119711304546");

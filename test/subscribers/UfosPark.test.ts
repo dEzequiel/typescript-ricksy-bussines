@@ -1,6 +1,6 @@
-import { CreditCard } from "../src/domain/CreditCard";
-import { UfoStatus } from "../src/subscribers/types";
-import { Ufo, UfosPark } from "../src/subscribers/UfosPark";
+import { CreditCard } from "../../src/domain/CreditCard";
+import { UfoStatus } from "../../src/subscribers/types";
+import { Ufo, UfosPark } from "../../src/subscribers/UfosPark";
 
 describe("UfosPark class", () => {
   const card = new CreditCard("Abradolf Lincler", "4916119711304546");
