@@ -35,8 +35,8 @@ describe("CrystalExpender class", () => {
   });
 
   it("should return 3", () => {
-    expect(crystalExpender.stock).toBe(3)
-  })
+    expect(crystalExpender.stock).toBe(3);
+  });
 
   it("should return 4916119711304546 owner crystal", () => {
     crystalExpender.dispatch(card);
