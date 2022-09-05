@@ -1,8 +1,7 @@
-import { CreditCard } from "../domain/CreditCard";
+import { Observer } from "./Observer";
 import { GuestDispatcher } from "./types";
 
-export class Notificator implements GuestDispatcher {
-  subscribers: GuestDispatcher[] = [];
+export class Notificator extends Observer {
 
   register(service: GuestDispatcher): void {
     const isExist = this.subscribers.includes(service);
@@ -22,15 +21,6 @@ export class Notificator implements GuestDispatcher {
     }
 
     this.subscribers.splice(subscriberIndex, 1);
-  }
-
-  /** When a new event occurs, the notifier loops
-  the subscription list and calls the notify method
-  declared in the GuestDispatcher interface on each subscriber object. */
-  dispatch(card: CreditCard): void {
-    this.subscribers.forEach(function (s: GuestDispatcher) {
-      s.dispatch(card);
-    });
   }
 
   get observers(): number {
