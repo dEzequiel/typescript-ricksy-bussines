@@ -4,7 +4,6 @@ import { CreditCard } from "../src/domain/CreditCard";
 import { Ufo, UfosPark } from "../src/subscribers/UfosPark";
 import { showServices } from "../src/main";
 import { UfoStatus } from "../src/subscribers/types";
-import { GuestInformation } from "../src/types";
 
 describe("Testing the integration of the app", () => {
   it("should decrease money and assign ufo to each client", () => {
