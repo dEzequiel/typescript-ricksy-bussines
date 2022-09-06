@@ -27,19 +27,19 @@ let ufos: Ufo[] = [
 
 // Create inventory of available Crystals.
 let crystals: Crystal[] = [
-    {
-      name: "crystal one",
-      owner: undefined,
-    },
-    {
-      name: "crystal two",
-      owner: undefined,
-    },
-  ];
+  {
+    name: "crystal one",
+    owner: undefined,
+  },
+  {
+    name: "crystal two",
+    owner: undefined,
+  },
+];
 
-  crystals.forEach(function (crystal: Crystal) {
-    crystalExpender.add(crystal);
-  });
+crystals.forEach(function (crystal: Crystal) {
+  crystalExpender.add(crystal);
+});
 
 ufos.forEach(function (ufo: Ufo) {
   ufosPark.add(ufo);
@@ -85,14 +85,14 @@ showServices(morty, crystalExpender, ufosPark);
 
 interface GuestInformation {
   card: CreditCard;
-  packs: Crystal | undefined ;
+  packs: Crystal | undefined;
   ufo: Ufo | undefined;
 }
-function showServices(
+export function showServices(
   card: CreditCard,
   expender: CrystalExpender,
   ufo: UfosPark
-) {
+): GuestInformation {
   let guest: GuestInformation = {
     card: card,
     packs: expender.serviceOf(card.numberCard),
@@ -100,4 +100,5 @@ function showServices(
   };
 
   console.log(guest);
+  return guest
 }

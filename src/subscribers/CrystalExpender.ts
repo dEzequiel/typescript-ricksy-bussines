@@ -19,6 +19,10 @@ export class CrystalExpender implements GuestDispatcher {
     return this.inventory.length;
   }
 
+  get _price(): number {
+    return this.price;
+  }
+
   add(crystal: Crystal): void {
     this.inventory.push(crystal);
   }
